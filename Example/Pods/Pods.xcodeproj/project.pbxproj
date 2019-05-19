@@ -11,8 +11,7 @@
 		2AD77F1400BF7EA99417F304DCD5BF60 /* Pods-FLCommonLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 013084555C2487104C8A1864D3099826 /* Pods-FLCommonLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F1B710E4986C94AFAB4BE820E875230 /* FLCommonLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6511850495D88941B1064BF0CF7203B8 /* FLCommonLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C56223A85BD4414EB4CBFF55F9377E9 /* Pods-FLCommonLibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D35D097A876762751C4327505C6E54 /* Pods-FLCommonLibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6246639622911E7C00C5DEE2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246639522911E7C00C5DEE2 /* Service.swift */; };
-		6246639822911F3800C5DEE2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246639722911F3800C5DEE2 /* Service.swift */; };
+		6246639E229125F600C5DEE2 /* ServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246639D229125F600C5DEE2 /* ServiceTest.swift */; };
 		7C928851503F2C62D51B9760691EFE57 /* Pods-FLCommonLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE21303FE0C1E6B88A7E5FD494257916 /* Pods-FLCommonLibrary_Example-dummy.m */; };
 		8755A9A7C8681E5F553FC973C647E3AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		EF0E36F2C6ABB79FAB09F90B0C3A2C37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -50,8 +49,7 @@
 		4DBE6C4EF8E577A970B8464F41F82EB0 /* Pods-FLCommonLibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FLCommonLibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		512F2F71731FAE2C261F2C9D95ED8642 /* Pods-FLCommonLibrary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FLCommonLibrary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		565B5E4B129E2019EFA1382A6AD2BC55 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		6246639522911E7C00C5DEE2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		6246639722911F3800C5DEE2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Example/FLCommonLibrary/Service.swift; sourceTree = "<group>"; };
+		6246639D229125F600C5DEE2 /* ServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTest.swift; sourceTree = "<group>"; };
 		6502D38B0D206F2F49CA7465002C6DB2 /* FLCommonLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLCommonLibrary-prefix.pch"; sourceTree = "<group>"; };
 		6511850495D88941B1064BF0CF7203B8 /* FLCommonLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLCommonLibrary-umbrella.h"; sourceTree = "<group>"; };
 		6EC3E8E00751434BCA4ED1BD2211F340 /* Pods-FLCommonLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FLCommonLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,8 +131,6 @@
 		4F6B7250A9EDE4C00D928B6765360EDD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6246639522911E7C00C5DEE2 /* Service.swift */,
-				6246639722911F3800C5DEE2 /* Service.swift */,
 				D87C4260C2963315F1C2D579830F3E7E /* FLCommonLibrary.podspec */,
 				565B5E4B129E2019EFA1382A6AD2BC55 /* LICENSE */,
 				3B6BB20864957AE010429A544465C82F /* README.md */,
@@ -146,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				A0657C2D397765B12AC851CE971A3380 /* ReplaceMe.swift */,
+				6246639D229125F600C5DEE2 /* ServiceTest.swift */,
 				4F6B7250A9EDE4C00D928B6765360EDD /* Pod */,
 				FA7B51FF1053282D5E0EDA801D3D73C0 /* Support Files */,
 			);
@@ -372,9 +369,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC18E6159EAF11144B4B606440438413 /* FLCommonLibrary-dummy.m in Sources */,
-				6246639822911F3800C5DEE2 /* Service.swift in Sources */,
 				F90BB65E91A631A41EB48C758C04D3E8 /* ReplaceMe.swift in Sources */,
-				6246639622911E7C00C5DEE2 /* Service.swift in Sources */,
+				6246639E229125F600C5DEE2 /* ServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
