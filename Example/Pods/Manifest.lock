@@ -1,0 +1,16 @@
+PODS:
+  - FLCommonLibrary (0.1.0)
+
+DEPENDENCIES:
+  - FLCommonLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  FLCommonLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FLCommonLibrary: b6779d9e0ace61b32aa63556fa891938986c2680
+
+PODFILE CHECKSUM: 23ad7ed2454020155f21a17585a8267de82501c6
+
+COCOAPODS: 1.6.2

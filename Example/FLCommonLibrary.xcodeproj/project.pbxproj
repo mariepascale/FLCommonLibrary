@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		62466394229113D700C5DEE2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62466393229113D700C5DEE2 /* Service.swift */; };
 		AB428FB52163A2104DF3FE50 /* Pods_FLCommonLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E3A694D13BFBBAF21D04B4 /* Pods_FLCommonLibrary_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		155C6A6C9A78AF8FB0993C2B /* Pods-FLCommonLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLCommonLibrary_Example.debug.xcconfig"; path = "Target Support Files/Pods-FLCommonLibrary_Example/Pods-FLCommonLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3274EC27B3E80A420FAA24B1 /* FLCommonLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FLCommonLibrary.podspec; path = ../FLCommonLibrary.podspec; sourceTree = "<group>"; };
+		3274EC27B3E80A420FAA24B1 /* FLCommonLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FLCommonLibrary.podspec; path = ../FLCommonLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5736C6FA43BB104FA0DD0825 /* Pods-FLCommonLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLCommonLibrary_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FLCommonLibrary_Tests/Pods-FLCommonLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FLCommonLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLCommonLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,8 +42,9 @@
 		607FACE51AFB9204008FA782 /* FLCommonLibrary_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLCommonLibrary_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		933D97B2A1D1C984516EDE12 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		AD1190E4B447C14C6B3BBB20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		62466393229113D700C5DEE2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		933D97B2A1D1C984516EDE12 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AD1190E4B447C14C6B3BBB20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C4237210F5A9B042CD9E96D1 /* Pods-FLCommonLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLCommonLibrary_Example.release.xcconfig"; path = "Target Support Files/Pods-FLCommonLibrary_Example/Pods-FLCommonLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CCAC89B6A3DFB001FAC87524 /* Pods-FLCommonLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLCommonLibrary_Tests.release.xcconfig"; path = "Target Support Files/Pods-FLCommonLibrary_Tests/Pods-FLCommonLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D3E3A694D13BFBBAF21D04B4 /* Pods_FLCommonLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLCommonLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				62466393229113D700C5DEE2 /* Service.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -156,7 +159,6 @@
 				5736C6FA43BB104FA0DD0825 /* Pods-FLCommonLibrary_Tests.debug.xcconfig */,
 				CCAC89B6A3DFB001FAC87524 /* Pods-FLCommonLibrary_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -337,6 +340,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				62466394229113D700C5DEE2 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
